@@ -55,7 +55,7 @@ _bash
 pip install numpy pandas xarray geopandas matplotlib scikit-learn cartopy rasterio rioxarray climate_indices_
 
 2. Download Input Data:
-Preprocessed data (daily climate netcdf and corresponding binary mask files for 2018–2022) is available on Zenodo: https://zenodo.org/........
+Preprocessed data (daily climate netcdf and corresponding binary mask files for 2018–2022) is available on Zenodo: 10.5281/zenodo.15805129
 Regional boundaries and landscapes types are available on GitHub
 Original climate data can be freely downloaded:
 - [CMCC VHR REA over Italy](https://doi.org/10.25424/cmcc/era5-2km_italy), [Raffa et al., 2021](https://doi.org/10.3390/data6080088), [Adinolfi et al., 2023](https://doi.org/10.1007/s00382-023-06803-w)
@@ -70,21 +70,3 @@ In order to run the jupyter notebook it is necessary to download the preprocesse
 
 ### Acknowledgments:
 This study was carried out within the frame of Myriad_EU project (https://www.myriadproject.eu/), which has received fundings from the European Union’s Horizon 2020 research and innovation programme call H2020-LC-CLA-2018-2019-2020 under grant agreement number 101003276.
-
-### **📖 Citation**
-_@software{MultiHazardFootprint_DBSCAN,
-
-author = {Davide Mauro Ferrario, Timothy Tiggeloven, Margherita Maraschini, Marcello Sanò, Judith Claassen, Marleen de Ruiter, Silvia Torresan, Andrea Critto},
-
-title = {Multi-Hazard Footprints Identification},
-
-year = {2025},
-
-publisher = {Zenodo},
-
-version = {v1.0},
-
-doi = {...../zenodo......},
-
-url = {https://github.com/dmferrario2/DBSCAN}
-}_
