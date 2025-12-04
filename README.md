@@ -54,7 +54,7 @@ _bash
 pip install numpy pandas xarray geopandas matplotlib scikit-learn cartopy rasterio rioxarray climate_indices_
 
 2. Download Input Data:
-Preprocessed data (daily climate netcdf and corresponding binary mask files for 2018–2022) is available on Zenodo: 10.5281/zenodo.15805129
+Preprocessed data (daily climate netcdf and corresponding binary mask files for 2018–2022) is available on Zenodo: [10.5281/zenodo.15805129](https://zenodo.org/records/15805130)
 Regional boundaries and landscapes types are available on GitHub
 Original climate data can be freely downloaded:
 - [CMCC VHR REA over Italy](https://doi.org/10.25424/cmcc/era5-2km_italy), [Raffa et al., 2021](https://doi.org/10.3390/data6080088), [Adinolfi et al., 2023](https://doi.org/10.1007/s00382-023-06803-w)
