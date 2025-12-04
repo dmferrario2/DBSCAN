@@ -33,10 +33,10 @@ The tool is demonstrated for the Veneto Region (Italy) using 5 years of data (20
 
 **Hazards Supported**:
 
-- Heatwaves (T_2M > 0°C)
-- Drought (SPI_12 < -2)
-- Extreme wind (WIND_SPEED > 13.9 m/s)
-- Extreme precipitation (TOT_PREC > 20 mm/day).
+- Heat anomaly (T_2M > 0°C; > 95th calendar day-percentile over a 30 year period (1991-2020))
+- Drought (SPI_12 < -2, Pearson distribution, 1991-2020 calibration period)
+- Extreme wind (WIND_SPEED > 13.9 m/s, >99th spatial percentile over a 30 year period (1991-2020))
+- Extreme precipitation (TOT_PREC > 20 mm/day, > 99th spatial percentile over a 30 year period (1991-2020)).
 
 **Output**: Cluster labels, duration, intensity, and spatial extent per hazard.
 
