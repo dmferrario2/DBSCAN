@@ -25,18 +25,17 @@ The tool is demonstrated for the Veneto Region (Italy) using 5 years of data (20
 
 **Output**: Binary mask files (NetCDF) indicating hazard exceedance.
 
+**Hazard Supported**:
+- Heat anomaly, from mean daily temperature (T_mean), thresholds defined as: T_mean > 95th calendar day-percentile over a 30 year period (1991-2020), >0 ºC, exceedance lasts for more than 3 days.
+- Drought, from daily SPI (Pearson distribution, 1991-2020 calibration period, SPI_12 < -2).
+- Extreme wind, from maximum daily wind speed (WIND_SPEED), thresholds defined as: WIND_SPEED >99th spatial percentile over a 30 year period (1991-2020),  WIND_SPEED > 13.9 m/s.
+- Extreme precipitation, from daily total precipitation (TOT_PREC), threshold defined as: TOT PREC > 99th spatial percentile over a 30 year period (1991-2020), TOT_PREC > 20 mm/day.
+
 **2. Single-Hazard Clustering (Jupyter Notebook)**
 
 **Input**: Daily gridded climate data, binary mask files for each hazard
 
 **Tools**: DBSCAN clustering with custom spatial-temporal weights.
-
-**Hazards Supported**:
-
-- Heat anomaly (T_2M > 0°C; > 95th calendar day-percentile over a 30 year period (1991-2020))
-- Drought (SPI_12 < -2, Pearson distribution, 1991-2020 calibration period)
-- Extreme wind (WIND_SPEED > 13.9 m/s, >99th spatial percentile over a 30 year period (1991-2020))
-- Extreme precipitation (TOT_PREC > 20 mm/day, > 99th spatial percentile over a 30 year period (1991-2020)).
 
 **Output**: Cluster labels, duration, intensity, and spatial extent per hazard.
 
