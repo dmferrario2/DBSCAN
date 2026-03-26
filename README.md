@@ -130,7 +130,7 @@ Original climate data can be freely downloaded:
 
 
 ### Notes:
-In order to run the jupyter notebook it is necessary to download the preprocessed data (daily climate data and mask netcdf files) for each hazard, which are available on Zenodo. The data is provided only for testing purposes: in order to produce consistent results at least 30 years of climate data are required. The publication describing the analyses carried out in the Veneto Region on the historical (1991-2022), and future scenarios (RCP 4.5, RCP 8.5, 2023-2070) is in preparation. You can find the preprint at: 
+In order to run the jupyter notebook it is necessary to download the preprocessed data (daily climate data and mask netcdf files) for each hazard, which are available on Zenodo. The data is provided only for testing purposes: in order to produce consistent results at least 30 years of climate data are required. The publication describing the analyses carried out in the Veneto Region on the historical (1991-2022), and future scenarios (RCP 4.5, RCP 8.5, 2023-2070) is in preparation. You can find the preprint at: https://doi.org/10.22541/essoar.175396232.24844978/v1
 
 ### Acknowledgments:
 This study was carried out within the frame of Myriad_EU project (https://www.myriadproject.eu/), which has received fundings from the European Union’s Horizon 2020 research and innovation programme call H2020-LC-CLA-2018-2019-2020 under grant agreement number 101003276.
