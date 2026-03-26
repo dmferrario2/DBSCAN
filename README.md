@@ -32,7 +32,7 @@ The tool is demonstrated for the Veneto Region (Italy) using 5 years of data (20
 - Extreme wind, from maximum daily wind speed (WIND_SPEED), thresholds defined as: WIND_SPEED >99th spatial percentile over a 30 year period (1990-2020),  WIND_SPEED > 13.9 m/s.
 - Extreme precipitation, from daily total precipitation (TOT_PREC), threshold defined as: TOT PREC > 99th spatial percentile over a 30 year period (1990-2020), TOT_PREC > 20 mm/day.
 
-** Notes**:
+**Notes**:
 The CDO code works on lists of input files provided as plain text files (temp_list.txt, prec_list.txt, wind_list.txt), each containing one file path per line. To adapt the code to a different reference period, change the year range in -yearsel,1990/2020 accordingly. To adjust the percentile thresholds, modify the values in -ydrunpctl (temperature) or -timpctl (precipitation, wind). The running window for the day-of-year percentile (currently 15 days) can be changed by editing the integer argument in -ydrunpctl,90,15 and the corresponding -ydrunmin,15 / -ydrunmax,15 calls.
 
 **2. Single-Hazard Clustering - calibration (Jupyter Notebook)**
@@ -87,7 +87,7 @@ The main parameters to adjust are:
 
 **Output**: Compound and consecutive footprints
 
-**NOTES**:
+**Notes**:
 The compound footprint and statistics plots are illustrative on short reanalysis periods — robust results require at least 30 years of data, as noted in the code comments
 
 - DBSCAN parameters (day_weight, epsilon, min_elements) are set per hazard in the single_hazard_cluster() calls and should reflect the calibrated values from the previous step
