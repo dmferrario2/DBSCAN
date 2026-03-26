@@ -21,6 +21,7 @@ if [ -f "$file_temp_read" ]; then
 	done < $file_temp_read
 else
 	echo "file does not exists"
+fi
 
 file_prec_read="prec_list.txt"
 if [ -f "$file_prec_read" ]; then
@@ -38,12 +39,13 @@ if [ -f "$file_prec_read" ]; then
 		cdo -timpctl,90 $file_prec_ref -timmin $file_prec_ref -timmax $file_prec_ref $file_prec_90
 		cdo -timpctl,95 $file_prec_ref -timmin $file_prec_ref -timmax $file_prec_ref $file_prec_95
 		cdo -timpctl,99 $file_prec_ref -timmin $file_prec_ref -timmax $file_prec_ref $file_prec_99
-		cdo -gec,0 -sub $file_prec_input $file_90 $file_prec_90_mask
-		cdo -gec,0 -sub $file_prec_input $file_95 $file_prec_95_mask
-		cdo -gec,0 -sub $file_prec_input $file_99 $file_prec_99_mask
-	done < $file_read
+		cdo -gec,0 -sub $file_prec_input $file_prec_90 $file_prec_90_mask
+		cdo -gec,0 -sub $file_prec_input $file_prec_95 $file_prec_95_mask
+		cdo -gec,0 -sub $file_prec_input $file_prec_99 $file_prec_99_mask
+	done < $file_prec_read
 else
 	echo "file does not exists"
+fi
 
 file_wind_read="wind_list.txt"
 if [ -f "$file_wind_read" ]; then
@@ -61,9 +63,9 @@ if [ -f "$file_wind_read" ]; then
 		cdo -timpctl,90 $file_wind_ref -timmin $file_wind_ref -timmax $file_wind_ref $file_wind_90
 		cdo -timpctl,95 $file_wind_ref -timmin $file_wind_ref -timmax $file_wind_ref $file_wind_95
 		cdo -timpctl,99 $file_wind_ref -timmin $file_wind_ref -timmax $file_wind_ref $file_wind_99
-		cdo -gec,0 -sub $file_wind_input $file_90 $file_wind_90_mask
-		cdo -gec,0 -sub $file_wind_input $file_95 $file_wind_95_mask
-		cdo -gec,0 -sub $file_wind_input $file_99 $file_wind_99_mask
+		cdo -gec,0 -sub $file_wind_input $file_wind_90 $file_wind_90_mask
+		cdo -gec,0 -sub $file_wind_input $file_wind_95 $file_wind_95_mask
+		cdo -gec,0 -sub $file_wind_input $file_wind_99 $file_wind_99_mask
 	done < $file_wind_read
 else
 	echo "file does not exists"
